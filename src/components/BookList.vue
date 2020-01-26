@@ -2,16 +2,22 @@
   <div>
     <h1>{{ title }}</h1>
     <ul>
-      <li v-for="book in books">{{book.title}}:{{book.author}}</li>
+      <!-- book-item v-for="book in books" v-bind:bookie="book" v-bind:key="book"></book-item -->
+      <book-item v-for="book in books" :book="book"></book-item>
     </ul>
   </div>
 </template>
 
 <script>
+  import BookItem from "./BookItem";
   export default {
     name: "BookList",
+    components: {BookItem},
     data: function() {
       return {
+        components: {
+          BookItem
+        },
         books: [
             {title: 'Self-Reliance', author: 'Ralph Waldo Emerson'},
             {title: 'American Gods', author: 'Neil Gaiman'},
@@ -35,7 +41,5 @@
 </style>
 
 <!--
-In BookList.vue's template tag,
-replace all three list item tags with a single list item tag that contains the interpolated book.title,
-followed by a colon, followed by the interpolated book.author.
+
 -->
