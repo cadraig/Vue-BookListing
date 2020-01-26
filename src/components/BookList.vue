@@ -29,7 +29,7 @@
     font-weight: normal;
   }
   ul {
-    list-style: none;:wq
+    list-style: none;:wq:wq
     padding: 0;
   }
   li {
