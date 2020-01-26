@@ -29,7 +29,7 @@
     font-weight: normal;
   }
   ul {
-    list-style: none;:wq:wq
+    list-style: none;
     padding: 0;
   }
   li {
@@ -42,5 +42,4 @@
 In BookList.vue's template tag,
 replace all three list item tags with a single list item tag that contains the interpolated book.title,
 followed by a colon, followed by the interpolated book.author.
-
 -->
